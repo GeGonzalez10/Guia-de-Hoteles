@@ -2,13 +2,14 @@
 {
 background-color: #c94c4c;
 color: white;
+margin-top: 50px;
 }
 footer
 {
-  padding: 10 px 10 px 0 10 px;
+  padding: 10px 10px 0 10px;
   background-color: #b1cbbb;
   margin-bottom: 0px;
-  margin-top: 10 px;
+  margin-top: 30px;
 }
 .btn
 {
