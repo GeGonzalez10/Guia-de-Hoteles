@@ -4,6 +4,7 @@ background-color: #c94c4c;
 color: white;
 margin-top: 50px;
 }
+
 footer
 {
   padding: 10px 10px 0 10px;
@@ -11,12 +12,18 @@ footer
   margin-bottom: 0px;
   margin-top: 30px;
 }
+
 .btn
 {
   background-color: #eea29a;
   color: black;
 }
-hr{background-color: #c94c4c;}
+
+hr
+{
+  background-color: #c94c4c;
+}
+
 .card-hotel
 {
   flex: 1 300px;
