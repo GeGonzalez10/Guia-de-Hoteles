@@ -45,13 +45,60 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
       </nav>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </span>
+
+      <h1>Contáctanos</h1>
+      <form class="" action="index.html" method="post">
+
+        <div class="form-row">
+          <div class="form group col-sm-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form group col-sm-6">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+        </div>
+
+        <div class="form-row">
+          <div class="form group col-sm-6">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ingrese su domicilio">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="país">País</label>
+            <select id="país" class="form-control">
+              <option selected>Venezuela</option>
+              <option>Estados Unidos</option>
+              <option>Argentina</option>
+              <option>España</option>
+              <option>Colombia</option>
+              <option>Canadá</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" class="form-control" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck"> Quiero que envien información a mi correo electrónico</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+      </form>
+
     </div>
 
     <footer>
