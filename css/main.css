@@ -3,6 +3,7 @@
 background-color: #c94c4c;
 color: white;
 margin-top: 50px;
+margin-bottom: 20px
 }
 
 footer
@@ -31,7 +32,22 @@ hr
   padding: 2px 2px 2px 2px;
 }
 
+.card-banner
+{
+  margin-left: 12px;
+  margin-right: 12px;
+  flex: 1 300px;
+  margin-top: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
 .iconos_footer
 {
   margin-right: 6px;
+}
+
+.breadcrumb
+{
+  margin-top: 20px;
 }
