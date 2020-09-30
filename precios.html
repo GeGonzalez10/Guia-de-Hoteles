@@ -49,50 +49,68 @@
               <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
           </nav>
-          <h1>Precios</h1>
-          <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-light">
-            <th>Calidad</th>
-            <th>Vargas</th>
-            <th>Carabobo</th>
-            <th>Zulia</th>
-            <th>Caracas</th>
-          </thead>
-<tbody>
-  <tr>
-    <td><span class="oi oi-star"></span></td>
-    <td>10$</td>
-    <td>20$</td>
-    <td>30$</td>
-    <td>35$</td>
-  </tr>
-  <tr>
-    <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-    <td>40$</td>
-    <td>50$</td>
-    <td>60$</td>
-    <td>70$</td>
-  </tr>
-  <tr>
+
+  <ul class="nav nav-pills" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="compara-tab" data-toogle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true"> Compara precios</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="comentarios-tab" data-toogle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+    </li>
+   </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+      <div class="table-responsive">
+      <table class="table">
+      <thead class="thead-light">
+        <th>Calidad</th>
+        <th>Vargas</th>
+        <th>Carabobo</th>
+        <th>Zulia</th>
+        <th>Caracas</th>
+      </thead>
+      <tbody>
+      <tr>
+      <td><span class="oi oi-star"></span></td>
+      <td>10$</td>
+      <td>20$</td>
+      <td>30$</td>
+      <td>35$</td>
+      </tr>
+      <tr>
+      <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+      <td>40$</td>
+      <td>50$</td>
+      <td>60$</td>
+      <td>70$</td>
+      </tr>
+      <tr>
       <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
       <td>80$</td>
       <td>90$</td>
       <td>100$</td>
       <td>130$</td>
-  </tr>
-  <tr>
+      </tr>
+      <tr>
       <td><span class="oi oi-star"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
       <td>140$</td>
       <td>160$</td>
       <td>180$</td>
       <td>200$</td>
-  </tr>
-</tbody>
+      </tr>
+      </tbody>
 
-        </table>
+      </table>
       </div>
-        </div>
+      </div>
+
+    <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+       <h1>Comentarios</h1>
+    </div>
+
+
+  </div>
 
         <footer>
           <div class="row">
