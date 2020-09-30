@@ -51,11 +51,23 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-      <div class="row">
 
-        <div class="col-sm-4"> <p><h3>Guía Interactiva de Hoteles</h3>Diseñada para Orientarte y darte un listado de Hoteles, donde podrás consultar toda la información del Hotel Solicitado. </p></div>
-        <div class="col-sm-4"><p><h3>En nuestra Guía Encontraras</h3>Todo para que cuentes con la información Necesaria para tomar la difícil decisión de qué es lo que quieres para vacacionar.</p></div>
-        <div class="col-sm-4"><p><h3>Conoce más Acerca de</h3>Habitaciones, Servicios,Ubicación,Restaurantes y Mas.</p></div>
+      <div class="row">
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary" data-toogle="collapse" data-target="#guia" aria-expanded="false" aria-controls="multiCollapse1">Guía Interactiva de Hoteles</button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary" data-toogle="collapse" data-target="#encontraras" aria-expanded="false" aria-controls="multiCollapse1">En nuestra Guía Encontraras</button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary" data-toogle="collapse" data-target="#conoce" aria-expanded="false" aria-controls="multiCollapse1">Conoce más Acerca <br> de</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="guia"><p><h3>Guía Interactiva de Hoteles</h3>Diseñada para Orientarte y darte un listado de Hoteles, donde podrás consultar toda la información del Hotel Solicitado.</p> </div>
+        <div class="col-sm-4 collapse multi-collapse" id="encontraras"><p><h3>En nuestra Guía Encontraras</h3>Todo para que cuentes con la información Necesaria para tomar la difícil decisión de qué es lo que quieres para vacacionar.</p></div>
+        <div class="col-sm-4 collapse multi-collapse" id="conoce"><p><h3>Conoce más Acerca de</h3>Habitaciones, Servicios,Ubicación,Restaurantes y Mas.</p></div>
       </div>
 
     </div>
