@@ -1,28 +1,35 @@
+$rosa: #c94c4c;
+$turquesa:#b1cbbb;
+$rosa_palido: #eea29a;
+
+@mixin margenes($top, $bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
 .jumbotron
 {
-background-color: #c94c4c;
+background-color: $rosa;
 color: white;
-margin-top: 50px;
-margin-bottom: 20px
+@include margenes(50px, 20px);
 }
 
 footer
 {
   padding: 10px 10px 0 10px;
-  background-color: #b1cbbb;
-  margin-bottom: 0px;
-  margin-top: 30px;
+  background-color: $turquesa;
+  @include margenes(30px, 0px);
 }
 
 .btn
 {
-  background-color: #eea29a;
+  background-color: $rosa_palido;
   color: black;
 }
 
 hr
 {
-  background-color: #c94c4c;
+  background-color: $rosa;
 }
 
 .card-hotel
