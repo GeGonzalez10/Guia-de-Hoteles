@@ -8,11 +8,11 @@
     "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "dev": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin imagenes/* --out-dir dist/imagenes",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
-    "build":"npm run clean && npm run scss && npm run imagemin && npm run usemin "
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin "
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,11 @@
   "devDependencies": {
     "copyfiles": "^2.4.0",
     "cssmin": "^0.4.3",
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
