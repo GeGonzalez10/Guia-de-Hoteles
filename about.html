@@ -8,14 +8,14 @@
   <!-- Bootstrap CSS -->
   <!-- build:css dist/about.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-<!-- endbuild -->
+  <!-- endbuild -->
 
   <title>Guía Hoteles</title>
 </head>
 <body>
-
+<!-- Agregamos navegavilidad a la página con navbar -->
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
@@ -33,7 +33,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
           <li class="nav-item active"> <a class="nav-link" href="./about.html">Nosotros</a></li>
-            <li class="nav-item"> <a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item"> <a class="nav-link" href="./precios.html">Precios</a></li>
           <li class="nav-item"> <a class="nav-link" href="#">Términos y Condiciones</a></li>
           <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
 
@@ -44,6 +44,7 @@
     <div class="jumbotron">
       <center><h1>Hoteles</h1></center>
     </div>
+      <!-- Agregamos navegavilidad a la página con breadcrumb -->
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -69,6 +70,7 @@
         <div class="col-sm-4">
           <address>
             <h3>Oficina Central</h3>
+            <!-- Usamos la librería Open-Iconic para agregar íconos a la dirección en el Footer-->
             <strong><p><span class="oi oi-home iconos_footer"></span>  1162 Catia La Mar, Vargas, Venezuela</p>
               <p><span class="oi oi-phone iconos_footer"></span>  +58-4143087498</p>
               <p><span class="oi oi-envelope-closed iconos_footer"></span>  contacto@guiahoteles.com</p>
@@ -84,13 +86,14 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- build:js dist/about.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/about.js"></script>
     <!-- endbuild -->
-
   </body>
   </html>

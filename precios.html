@@ -8,14 +8,14 @@
   <!-- Bootstrap CSS -->
   <!-- build:css dist/precios.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <!-- endbuild -->
 
   <title>Guía Hoteles</title>
 </head>
 <body>
-
+  <!-- Agregamos navegavilidad a la página con navbar -->
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
@@ -34,121 +34,122 @@
           <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
           <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li
             <li class="nav-item active"> <a class="nav-link active" href="./precios.html">Precios</a></li>
-              <li class="nav-item"> <a class="nav-link" href="#">Términos y Condiciones</a></li>
-              <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Términos y Condiciones</a></li>
+            <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
 
-            </ul>
-          </div>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <center><h1>Hoteles</h1></center>
+      </div>
+        <!-- Agregamos navegavilidad a la página con breadcrumb -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Precios</li>
+          </ol>
         </nav>
 
-        <div class="jumbotron">
-          <center><h1>Hoteles</h1></center>
-        </div>
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Precios</li>
-            </ol>
-          </nav>
+        <ul class="nav nav-pills" id="myTab" role="tablist">  <!-- Usamos tabs y pills para agregar los precios-->
+          <li class="nav-item">
+            <a class="nav-link active" id="compara-tab" data-toogle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true"> Compara precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="comentarios-tab" data-toogle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tarjetas-tab" data-toogle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+          </li>
+        </ul>
 
-  <ul class="nav nav-pills" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="compara-tab" data-toogle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true"> Compara precios</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" id="comentarios-tab" data-toogle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" id="tarjetas-tab" data-toogle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
-    </li>
-   </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="thead-light">
+                  <th>Calidad</th>
+                  <th>Vargas</th>
+                  <th>Carabobo</th>
+                  <th>Zulia</th>
+                  <th>Caracas</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="oi oi-star"></span></td>
+                    <td>10$</td>
+                    <td>20$</td>
+                    <td>30$</td>
+                    <td>35$</td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                    <td>40$</td>
+                    <td>50$</td>
+                    <td>60$</td>
+                    <td>70$</td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                    <td>80$</td>
+                    <td>90$</td>
+                    <td>100$</td>
+                    <td>130$</td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-star"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                    <td>140$</td>
+                    <td>160$</td>
+                    <td>180$</td>
+                    <td>200$</td>
+                  </tr>
+                </tbody>
 
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
-      <div class="table-responsive">
-      <table class="table">
-      <thead class="thead-light">
-        <th>Calidad</th>
-        <th>Vargas</th>
-        <th>Carabobo</th>
-        <th>Zulia</th>
-        <th>Caracas</th>
-      </thead>
-      <tbody>
-      <tr>
-      <td><span class="oi oi-star"></span></td>
-      <td>10$</td>
-      <td>20$</td>
-      <td>30$</td>
-      <td>35$</td>
-      </tr>
-      <tr>
-      <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-      <td>40$</td>
-      <td>50$</td>
-      <td>60$</td>
-      <td>70$</td>
-      </tr>
-      <tr>
-      <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-      <td>80$</td>
-      <td>90$</td>
-      <td>100$</td>
-      <td>130$</td>
-      </tr>
-      <tr>
-      <td><span class="oi oi-star"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-      <td>140$</td>
-      <td>160$</td>
-      <td>180$</td>
-      <td>200$</td>
-      </tr>
-      </tbody>
-
-      </table>
-      </div>
-      </div>
-
-    <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-       <h1>Comentarios</h1>
-    </div>
-
-    <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-       <h1>Tarjetas</h1>
-    <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#tarjeta1" aria-expanded="false" aria-controls="tarjeta1">
-              Visa
-            </button>
-          </h5>
-        </div>
-        <div id="tarjeta1" class="collapse show" aria-labelledby="tarjeta1" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </table>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#tarjeta2" aria-expanded="false" aria-controls="tarjeta2">
-              MasterCard
-            </button>
-          </h5>
-        </div>
-        <div id="tarjeta2" class="collapse" aria-labelledby="tarjeta2" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  </div>
+          <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+            <h1>Comentarios</h1>
+          </div>
+
+          <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+            <h1>Tarjetas</h1>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#tarjeta1" aria-expanded="false" aria-controls="tarjeta1">
+                      Visa
+                    </button>
+                  </h5>
+                </div>
+                <div id="tarjeta1" class="collapse show" aria-labelledby="tarjeta1" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#tarjeta2" aria-expanded="false" aria-controls="tarjeta2">
+                      MasterCard
+                    </button>
+                  </h5>
+                </div>
+                <div id="tarjeta2" class="collapse" aria-labelledby="tarjeta2" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
         <footer>
           <div class="row">
@@ -161,6 +162,7 @@
             <div class="col-sm-4">
               <address>
                 <h3>Oficina Central</h3>
+                <!-- Usamos la librería Open-Iconic para agregar íconos a la dirección en el Footer-->
                 <strong><p><span class="oi oi-home iconos_footer"></span>  1162 Catia La Mar, Vargas, Venezuela</p>
                   <p><span class="oi oi-phone iconos_footer"></span>  +58-4143087498</p>
                   <p><span class="oi oi-envelope-closed iconos_footer"></span>  contacto@guiahoteles.com</p>
@@ -182,6 +184,8 @@
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/popper.js/dist/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/precios.js"></script>
+
         <!-- endbuild -->
 
       </body>

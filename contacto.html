@@ -8,14 +8,14 @@
   <!-- Bootstrap CSS -->
   <!-- build:css dist/contacto.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <!-- endbuild -->
 
   <title>Guía Hoteles</title>
 </head>
 <body>
-
+  <!-- Agregamos navegavilidad a la página con navbar -->
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
@@ -44,6 +44,7 @@
     <div class="jumbotron">
       <center><h1>Hoteles</h1></center>
     </div>
+      <!-- Agregamos navegavilidad a la página con breadcrumb -->
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -52,7 +53,7 @@
         </ol>
       </nav>
 
-      <h1>Contáctanos</h1>
+      <h1>Contáctanos</h1>  <!-- Implementamos formularios-->
       <form class="" action="index.html" method="post">
 
         <div class="form-row">
@@ -115,6 +116,7 @@
         <div class="col-sm-4">
           <address>
             <h3>Oficina Central</h3>
+            <!-- Usamos la librería Open-Iconic para agregar íconos a la dirección en el Footer-->
             <strong><p><span class="oi oi-home iconos_footer"></span>  1162 Catia La Mar, Vargas, Venezuela</p>
               <p><span class="oi oi-phone iconos_footer"></span>  +58-4143087498</p>
               <p><span class="oi oi-envelope-closed iconos_footer"></span>  contacto@guiahoteles.com</p>
@@ -138,6 +140,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/contacto.js"></script>
     <!-- endbuild -->
   </body>
   </html>
